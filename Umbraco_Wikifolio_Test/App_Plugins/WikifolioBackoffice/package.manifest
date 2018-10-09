@@ -1,0 +1,20 @@
+﻿{
+  "$schema": "http://json.schemastore.org/package.manifest",
+  "propertyEditors": [
+    {
+      "name": "Wikifolio Repeat Textboxes",
+      "alias": "wikifolio.repeatTextBoxes",
+      "editor": {
+        "view": "/App_Plugins/WikifolioBackoffice/wikifolio.repeatText.html",
+        "valueType": "JSON"
+      }
+    }
+  ],
+  "javascript": [
+    "/App_Plugins/WikifolioBackoffice/wikifolio.repeatText.controller.js"
+  ]
+  //"css": [
+  //  ""
+  //]
+  
+}

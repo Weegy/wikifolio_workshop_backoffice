@@ -1,0 +1,10 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage< Umbraco_Wikifolio_Test.OwnCode.AirportDetailModel>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = null;
+}
+
+<h1>@(Model.Content.GetPropertyValue<string>("iCAOCode"))</h1>
+<h1>@Model.NewInformationNotFromUmbraco</h1>
+<h1>@Model.WeatherModel.data.FirstOrDefault().name</h1>
+<p>@(Model.Content.GetPropertyValue<string>("detailInformation"))</p>
