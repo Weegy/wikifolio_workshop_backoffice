@@ -1,3 +1,10 @@
 ﻿<div ng-controller="wikifolio.repeatText.controller">
-    <h3>Hello Wikifolio</h3>
+    <div>
+        <div class="row" ng-repeat="value in model.value.savedItems">
+            <input type="text" disabled="disabled"  ng-model="value"/>
+        </div>
+        
+    </div>
+    <input type="text" ng-model="model.value.newText"/>
+    <button class="btn btn-warning" ng-click="saveTheItem()">Show It</button>
 </div>
